@@ -4,4 +4,4 @@ const client = redis.createClient();
 
 const playload = { type: "test-message" };
 
-await client.publish("channel", JSON.stringify({ playload }));
+await client.publish("channel", "message");
